@@ -54,7 +54,7 @@ ROOT_URLCONF = 'Preguntin.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['C:/Users/soporte.sistemas/OneDrive - SAAM S.A/Mauricio/Documentos/Preguntin/Preguntin-Django/Preguntin/Preguntin/Template'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -75,9 +75,14 @@ WSGI_APPLICATION = 'Preguntin.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'Preguntin',
+        'USER' : 'root',
+        'PASSWORLD' : '',
+        'HOST' : 'localhost',
+        'PORT' : '3306',
+    },
+
 }
 
 
@@ -103,7 +108,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es-un'
 
 TIME_ZONE = 'UTC'
 
