@@ -20,7 +20,7 @@ from Preguntin.views import dashboard
 from Juego.views import jugar
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('configuration/', admin.site.urls),
     path('dashboard/', dashboard),
     path('Playing/',jugar)
 ]
